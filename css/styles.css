@@ -12,6 +12,37 @@
   --price-list-color: #9da4bd;
   --why-color: #303030;
   --masters-name: #303030;
+  --typical-margin: 20px;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
 }
 
 .link {
@@ -59,6 +90,8 @@ body {
 }
 .header {
   background-color: #555555;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-link {
   font-weight: 600;
@@ -89,6 +122,7 @@ body {
 /* ---------------------HERO----------------------------- */
 .hero-content {
   background-color: #555555;
+  padding: 272px 96px 206px 96px;
 }
 .hero-link {
   font-weight: 600;
@@ -109,6 +143,7 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--hero-pre-header-color);
+  margin-bottom: var(--typical-margin);
 }
 .hero-header {
   font-family: "Raleway", sans-serif;
@@ -117,6 +152,7 @@ body {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--hero-header-color);
+  margin-bottom: var(--typical-margin);
 }
 .hero-paragraph {
   font-weight: 400;
@@ -124,17 +160,25 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--header-main-paragraph-color);
+  max-width: 400px;
 }
 
 /* ---------------------ABOUT----------------------------- */
+.about {
+  padding-bottom: 139px;
+  padding-top: 90px;
+}
 .about-pre-header {
   color: var(--pre-header-color-dark);
+  margin-bottom: var(--typical-margin);
 }
 .about-main-header {
   color: var(--header-color-dark);
+  margin-bottom: var(--typical-margin);
 }
 .about-paragraph {
   color: var(--main-paragraph-color-dark);
+  margin-bottom: var(--typical-margin);
 }
 .about-paragraph2 {
   font-weight: 400;
@@ -142,6 +186,7 @@ body {
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: var(--main-paragraph-color-dark);
+  margin-bottom: 40px;
 }
 .about-button {
   color: var(--second-button-color);
@@ -149,13 +194,17 @@ body {
 /* -------------------SERVICES AND PRICES-------------------- */
 .services {
   background-color: #555555;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 .services-pre-header {
   color: var(--hero-pre-header-color);
+  margin-bottom: var(--typical-margin);
 }
 
 .services-main-header {
   color: var(--hero-header-color);
+  margin-bottom: var(--typical-margin);
 }
 .services-paragraph {
   font-weight: 400;
@@ -166,9 +215,22 @@ body {
 }
 .services-button {
   color: var(--main-button-color);
+  margin-top: 50px;
 }
 
 /* -------------------WHY-------------------- */
+.why {
+  padding-top: 143px;
+  padding-bottom: 108px;
+}
+.why-item {
+  width: 122px;
+  height: 93px;
+  border: 1px solid #000000;
+  padding: 20px 24px;
+  text-align: center;
+  background: #f7f7f7;
+}
 .why-number {
   font-weight: 700;
   font-size: 42px;
@@ -176,15 +238,19 @@ body {
   text-align: center;
   letter-spacing: 0.05em;
   color: var(--why-color);
+  display: block;
+  margin-bottom: 6px;
 }
 .why-text {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   color: var(--why-color);
+  margin-bottom: var(--typical-margin);
 }
 .why-pre-header {
   color: var(--pre-header-color-dark);
+  margin-bottom: var(--typical-margin);
 }
 .why-main-header {
   color: var(--header-color-dark);
@@ -193,11 +259,20 @@ body {
   color: var(--main-paragraph-color-dark);
 }
 /* -------------------MASTERS-------------------- */
-. masters-pre-header {
+.masters {
+  padding-bottom: 130px;
+  padding-top: 130px;
+}
+.masters-pre-header {
   color: var(--pre-header-color-dark);
+  margin-bottom: var(--typical-margin);
 }
 .masters-main-header {
   color: var(--header-color-dark);
+  margin-bottom: 44px;
+}
+.masters-img {
+  margin-bottom: 30px;
 }
 .masters-name {
   font-weight: 400;
@@ -205,6 +280,7 @@ body {
   line-height: 1.38;
   letter-spacing: 0.02em;
   color: var(--masters-name);
+  margin-bottom: 8px;
 }
 .masters-position {
   font-weight: 400;
@@ -214,11 +290,19 @@ body {
   color: var(--accent-color);
 }
 /* -------------------GALLERY-------------------- */
+.gallery {
+  padding-bottom: 130px;
+  padding-top: 130px;
+}
+/* -------------------CONTACTS-------------------- */
 .contacts {
   background-color: #191c26;
+  padding-bottom: 130px;
+  padding-top: 130px;
 }
 .gallery-pre-header {
   color: var(--pre-header-color-dark);
+  margin-bottom: 44px;
 }
 .contacts-header {
   font-family: "Raleway";
@@ -228,6 +312,13 @@ body {
   line-height: 49px;
   letter-spacing: 0.05em;
   color: #ffffff;
+  margin-bottom: 40px;
+}
+.contacts-item {
+  margin-bottom: var(--typical-margin);
+}
+.contacts-item:last-child {
+  margin-bottom: 70px;
 }
 .contacts-link {
   font-family: "Open Sans";
@@ -244,6 +335,7 @@ body {
 }
 .contacts-pre-header {
   color: #ffffff;
+  margin-bottom: var(--typical-margin);
 }
 
 .contacts-paragraph {
