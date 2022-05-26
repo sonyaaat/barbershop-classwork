@@ -72,18 +72,22 @@ img {
   letter-spacing: 0.02em;
 }
 .button {
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-  background-color: transparent;
+  min-width: 160px;
+  height: 40px;
   font-family: inherit;
+  font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  border: 1px solid var(--accent-color);
+  background-color: transparent;
+  border-radius: 30px;
 }
 .address-tag {
   font-family: inherit;
 }
+
 /* ---------------------HEADER----------------------------- */
 body {
   font-family: "Open Sans", sans-serif;
@@ -92,6 +96,9 @@ body {
   background-color: #555555;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+.header-logo {
+  margin-right: 70px;
 }
 .header-link {
   font-weight: 600;
@@ -118,11 +125,28 @@ body {
 .hero-button {
   color: var(--main-button-color);
 }
-
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+}
+.header-connect {
+  margin-left: auto;
+}
+.header-item:not(:last-child) {
+  margin-right: 40px;
+}
+.header-tel {
+  margin-right: 40px;
+}
 /* ---------------------HERO----------------------------- */
 .hero-content {
   background-color: #555555;
   padding: 272px 96px 206px 96px;
+  flex-grow: 1;
 }
 .hero-link {
   font-weight: 600;
@@ -162,11 +186,29 @@ body {
   color: var(--header-main-paragraph-color);
   max-width: 400px;
 }
-
+.hero > .container {
+  display: flex;
+}
+.hero-list {
+  width: 90px;
+}
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
+.about-content {
+  margin-left: 64px;
+  width: 500px;
+}
 /* ---------------------ABOUT----------------------------- */
 .about {
   padding-bottom: 139px;
   padding-top: 90px;
+}
+.about > .container {
+  display: flex;
+}
+.about-list {
+  display: flex;
 }
 .about-pre-header {
   color: var(--pre-header-color-dark);
@@ -215,13 +257,50 @@ body {
 }
 .services-button {
   color: var(--main-button-color);
+  margin: 0 auto;
+  display: block;
   margin-top: 50px;
 }
-
+.prices-wrap {
+  display: flex;
+}
+.services-price-list {
+  border: 1px dashed #ffffff;
+  padding: 30px 40px;
+  flex-grow: 1;
+}
+.services-price-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--typical-margin);
+}
+.services-price-item:last-child {
+  margin-bottom: 0;
+}
 /* -------------------WHY-------------------- */
 .why {
   padding-top: 143px;
   padding-bottom: 108px;
+}
+.why > .container {
+  display: flex;
+}
+.why-content {
+  width: 500px;
+  margin-left: 130px;
+}
+.why-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 374px;
+}
+
+.why-item:nth-child(2n) {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.why-list {
+  margin-left: 100px;
 }
 .why-item {
   width: 122px;
@@ -254,6 +333,7 @@ body {
 }
 .why-main-header {
   color: var(--header-color-dark);
+  margin-bottom: var(--typical-margin);
 }
 .why-paragraph {
   color: var(--main-paragraph-color-dark);
@@ -262,6 +342,15 @@ body {
 .masters {
   padding-bottom: 130px;
   padding-top: 130px;
+}
+.masters-list {
+  display: flex;
+  margin-left: -30px;
+}
+.masters-item {
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 -30px);
+  text-align: center;
 }
 .masters-pre-header {
   color: var(--pre-header-color-dark);
@@ -303,6 +392,14 @@ body {
 .gallery-pre-header {
   color: var(--pre-header-color-dark);
   margin-bottom: 44px;
+}
+.gallery-list {
+  display: flex;
+  margin-left: -30px;
+}
+.gallery-item {
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 -30px);
 }
 .contacts-header {
   font-family: "Raleway";
@@ -349,6 +446,15 @@ body {
   letter-spacing: 0.2em;
   color: #9da4bd;
 }
+.footer > .container {
+  display: flex;
+  align-items: center;
+}
+.footer-list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
 .footer-link {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -357,6 +463,9 @@ body {
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #303030;
+}
+.footer-item:not(:last-child) {
+  margin-right: 40px;
 }
 .footer-link:hover,
 .footer-link:focus {
