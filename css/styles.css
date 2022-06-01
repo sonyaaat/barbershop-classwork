@@ -286,7 +286,6 @@ body {
   display: flex;
 }
 .services-price-list {
-  border: 1px dashed #ffffff;
   padding: 30px 40px;
   flex-grow: 1;
 }
@@ -294,9 +293,27 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--typical-margin);
+  align-items: baseline;
 }
 .services-price-item:last-child {
   margin-bottom: 0;
+}
+.services-price-item::before {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.services-paragraph:first-child {
+  order: -1;
+}
+.services-price-list-light {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.services-price-list-dark {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 /* -------------------WHY-------------------- */
 .why {
@@ -326,7 +343,7 @@ body {
 .why-item {
   width: 122px;
   height: 93px;
-  border: 1px solid #000000;
+
   padding: 20px 24px;
   text-align: center;
   background: #f7f7f7;
@@ -340,6 +357,14 @@ body {
   color: var(--why-color);
   display: block;
   margin-bottom: 6px;
+}
+.why-number::after {
+  content: "+";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--accent-color);
+  vertical-align: top;
 }
 .why-text {
   font-weight: 600;
@@ -435,12 +460,6 @@ body {
   padding-bottom: 130px;
   padding-top: 130px;
 }
-/* -------------------CONTACTS-------------------- */
-.contacts {
-  background-color: #191c26;
-  padding-bottom: 130px;
-  padding-top: 130px;
-}
 .gallery-pre-header {
   color: var(--pre-header-color-dark);
   margin-bottom: 44px;
@@ -453,6 +472,38 @@ body {
   margin-left: 30px;
   flex-basis: calc(100% / 3 -30px);
 }
+/* -------------------CONTACTS-------------------- */
+.contacts-wrap {
+  background-color: #191c26;
+  /* background-image: url(../images/contacts.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 15px);
+  max-width: 1280px;
+  margin: 0 auto; */
+}
+.contacts-container {
+  display: flex;
+}
+.contacts {
+  padding-bottom: 130px;
+  padding-top: 130px;
+  width: calc(50% - 15px);
+  background-image: url(../images/contacts.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-left: 100px;
+  background-size: cover;
+}
+.online {
+  padding-bottom: 130px;
+  padding-top: 130px;
+  width: calc(50% + 15px);
+  margin-left: 58px;
+}
+.contacts-list {
+}
+
 .contacts-header {
   font-family: "Raleway";
   font-style: normal;
