@@ -27,7 +27,7 @@
         <nav class="header-nav">
           <ul class="header-list">
             <li class="header-item list">
-              <a href="" class="header-link link">О нас</a>
+              <a href="" class="header-link link current">О нас</a>
             </li>
             <li class="header-item list">
               <a href="" class="header-link link">Услуги и цены</a>
@@ -44,7 +44,7 @@
           <a class="header-tel link" href="tel:+380441111111"
             >+38 044 111 11 11</a
           >
-          <button type="button" class="button hero-button">
+          <button type="button" class="button hero-button" data-modal-open>
             онлайн-запись
           </button>
         </div>
@@ -54,28 +54,31 @@
       <!-- HERO -->
       <section class="hero">
         <div class="container">
-          <ul class="hero-list">
-            <li class="hero-item list">
-              <a
-                href=""
-                target="_blank"
-                rel="noopener nofollow noreferrer"
-                lang="en"
-                class="link hero-link"
-                >Instagram</a
-              >
-            </li>
-            <li class="hero-item list">
-              <a
-                href=""
-                target="_blank"
-                rel="noopener nofollow noreferrer"
-                lang="en"
-                class="link hero-link"
-                >Youtube</a
-              >
-            </li>
-          </ul>
+          <div class="hero-soc">
+            <ul class="hero-list">
+              <li class="hero-item list">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  lang="en"
+                  class="link hero-link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero-item list">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  lang="en"
+                  class="link hero-link"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+
           <div class="hero-content">
             <p lang="en" class="pre-header hero-pre-header">
               A hair salon for men in Kyiv
@@ -225,13 +228,22 @@
           <h2 class="main-header masters-main-header">Наши мастера</h2>
           <ul class="masters-list">
             <li class="masters-item list">
-              <img
-                src="./images/master1.jpg"
-                alt="Барбер стрежет клиента"
-                width="370"
-                height="346"
-                class="masters-img"
-              />
+              <div class="masters-top-wrap">
+                <img
+                  src="./images/master1.jpg"
+                  alt="Барбер стрежет клиента"
+                  width="370"
+                  height="346"
+                  class="masters-img"
+                />
+                <p class="masters-top-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum voluptatibus minima explicabo accusamus quaerat sit
+                  aut repudiandae velit autem voluptatem, quo neque facere
+                  nesciunt nobis reprehenderit nulla, perferendis itaque illum.
+                </p>
+              </div>
+
               <h3 lang="en" class="masters-name">John Smith</h3>
               <p lang="en" class="masters-position">Extreme Barber</p>
               <ul class="masters-soc-list list">
@@ -266,13 +278,22 @@
               </ul>
             </li>
             <li class="masters-item list">
-              <img
-                src="./images/master2.jpg"
-                alt="Барбер стрежет клиента"
-                width="370"
-                height="346"
-                class="masters-img"
-              />
+              <div class="masters-top-wrap">
+                <img
+                  src="./images/master2.jpg"
+                  alt="Барбер стрежет клиента"
+                  width="370"
+                  height="346"
+                  class="masters-img"
+                />
+                <p class="masters-top-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum voluptatibus minima explicabo accusamus quaerat sit
+                  aut repudiandae velit autem voluptatem, quo neque facere
+                  nesciunt nobis reprehenderit nulla, perferendis itaque illum.
+                </p>
+              </div>
+
               <h3 lang="en" class="masters-name">Michele Doe</h3>
               <p lang="en" class="masters-position">Extreme Barber</p>
               <ul class="masters-soc-list list">
@@ -307,13 +328,22 @@
               </ul>
             </li>
             <li class="masters-item list">
-              <img
-                src="./images/master3.jpg"
-                alt="Барбер стрежет клиента"
-                width="370"
-                height="346"
-                class="masters-img"
-              />
+              <div class="masters-top-wrap">
+                <img
+                  src="./images/master3.jpg"
+                  alt="Барбер стрежет клиента"
+                  width="370"
+                  height="346"
+                  class="masters-img"
+                />
+                <p class="masters-top-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Laborum voluptatibus minima explicabo accusamus quaerat sit
+                  aut repudiandae velit autem voluptatem, quo neque facere
+                  nesciunt nobis reprehenderit nulla, perferendis itaque illum.
+                </p>
+              </div>
+
               <h3 lang="en" class="masters-name">Alan Black</h3>
               <p lang="en" class="masters-position">Extreme Barber</p>
               <ul class="masters-soc-list list">
@@ -477,5 +507,15 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-svg">
+            <use class="modal-close-svg" href="./images/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal..js"></script>
   </body>
 </html>
