@@ -1,0 +1,67 @@
+/* -------------------SERVICES AND PRICES-------------------- */
+.services {
+  background-color: #111319;
+  background-image: url(../../images/prices.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+.services__pre-header {
+  color: var(--hero-pre-header-color);
+  margin-bottom: var(--typical-margin);
+}
+
+.services__main-header {
+  color: var(--hero-header-color);
+  margin-bottom: var(--typical-margin);
+}
+.prices__paragraph {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--price-list-color);
+}
+.services__button {
+  color: var(--main-button-color);
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+}
+.prices-wrap {
+  display: flex;
+}
+.prices {
+  padding: 30px 40px;
+  flex-grow: 1;
+}
+.prices__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--typical-margin);
+  align-items: baseline;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.12);
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}
+
+.prices__paragraph:first-child {
+  order: -1;
+}
+.prices--light {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+.prices--dark {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}

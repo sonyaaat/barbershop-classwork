@@ -1,0 +1,17 @@
+/* -------------------GALLERY-------------------- */
+.gallery {
+  padding-bottom: 130px;
+  padding-top: 130px;
+}
+.gallery__pre-header {
+  color: var(--pre-header-color-dark);
+  margin-bottom: 44px;
+}
+.gallery__list {
+  display: flex;
+  margin-left: -30px;
+}
+.gallery__item {
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 -30px);
+}
