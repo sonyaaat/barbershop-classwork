@@ -432,6 +432,39 @@
         <div class="container contacts-container">
           <section class="online">
             <h2 class="contacts-header">Онлайн-запись</h2>
+            <form class="online-form">
+              <div class="online-field">
+                <input
+                  type="text"
+                  class="online-input"
+                  name="online-name"
+                  id="online-name"
+                  placeholder=" "
+                />
+                <label for="online-name" class="online-label">Имя*</label>
+              </div>
+
+              <div class="online-field">
+                <input
+                  type="tel"
+                  class="online-input"
+                  name="online-tel"
+                  id="online-tel"
+                  placeholder=" "
+                />
+                <label for="online-tel" class="online-label">Телефон*</label>
+              </div>
+              <div class="online-field online-field--big">
+                <textarea
+                  name="online-mess"
+                  id="online-mess"
+                  class="online-mess"
+                  placeholder=" "
+                ></textarea>
+                <label for="online-mess" class="online-label">Cообщение</label>
+                <button class="button online--button">Отправить</button>
+              </div>
+            </form>
           </section>
           <section class="contacts">
             <h2 class="contacts-header">Контакты</h2>
@@ -507,6 +540,7 @@
         </ul>
       </div>
     </footer>
+    <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -514,6 +548,54 @@
             <use class="modal-close-svg" href="./images/sprite.svg#close"></use>
           </svg>
         </button>
+        <p class="modal__title">Оставьте свои данные, мы перезвоним</p>
+        <form>
+          <div class="form__field">
+            <label for="name" class="form__label">Имя</label>
+            <input name="name" type="text" id="name" class="form__input" />
+            <svg class="form__icon form__icon--1">
+              <use href="./images/sprite.svg#form-3"></use>
+            </svg>
+          </div>
+          <div class="form__field">
+            <label for="tel" class="form__label">Телефон</label>
+            <input name="tel" type="tel" id="tel" class="form__input" />
+            <svg class="form__icon form__icon--2">
+              <use href="./images/sprite.svg#form-1"></use>
+            </svg>
+          </div>
+          <div class="form__field">
+            <label for="mail" class="form__label">Почта</label>
+            <input name="mail" type="email" id="mail" class="form__input" />
+            <svg class="form__icon form__icon--3">
+              <use href="./images/sprite.svg#form-2"></use>
+            </svg>
+          </div>
+          <div class="form__field form__field--big">
+            <label for="comment" class="form__label">Комментарий</label>
+            <textarea
+              name="comment"
+              id="comment"
+              class="comments__input"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="form-field">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              class="policy-checkbox visually-hidden"
+            />
+            <label for="policy" class="footer__policy">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="" class="footer__policy--accent">Условия договора</a>
+            </label>
+            <!-- <span class="policy-icon"></span> -->
+          </div>
+
+          <button type="submit" class="modal__button">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal..js"></script>
