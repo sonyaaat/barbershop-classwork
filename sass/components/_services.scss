@@ -32,6 +32,10 @@
 }
 .prices-wrap {
   display: flex;
+  @media screen and (max-width: 1199.98px) {
+    flex-direction: column;
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
 }
 .prices {
   padding: 30px 40px;
@@ -61,7 +65,15 @@
 }
 .prices--light {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  @media screen and (max-width: 1199.98px) {
+    background: none;
+    padding-bottom: 20px;
+  }
 }
 .prices--dark {
   background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  @media screen and (max-width: 1199.98px) {
+    background: none;
+    padding-top: 0;
+  }
 }

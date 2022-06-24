@@ -84,6 +84,9 @@
 
 .hero__button {
   color: var(--main-button-color);
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-bottom: 20px;
+  }
 }
 .header > .container {
   display: flex;
@@ -95,10 +98,28 @@
 }
 .header__connect {
   margin-left: auto;
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
-.header__item:not(:last-child) {
-  margin-right: 40px;
+// .header__item:not(:last-child) {
+//   margin-right: 40px;
+// }
+.header__item {
+  &:not(:last-child) {
+    @media screen and(min-width:768px) {
+      margin-right: 24.25px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 40px;
+    }
+  }
 }
 .header__tel {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    margin-right: 0;
+  }
   margin-right: 40px;
 }
