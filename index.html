@@ -25,6 +25,11 @@
         <a href=""
           ><img src="./images/logo.jpg" alt="Логорип" class="header__logo"
         /></a>
+        <a href="" class="header__logo--white">
+          <svg class="logo-white__svg">
+            <use href="./images/sprite.svg#logo"></use>
+          </svg>
+        </a>
         <nav class="header__nav">
           <ul class="header__list">
             <li class="header__item list">
@@ -49,8 +54,78 @@
             онлайн-запись
           </button>
         </div>
+        <button
+          class="menu-open js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-open-svg">
+            <use href="./images/sprite.svg#menu "></use>
+          </svg>
+        </button>
       </div>
     </header>
+    <!-- MOBILE-MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-close js-close-menu">
+        <svg class="menu-close-svg">
+          <use href="./images/sprite.svg#close "></use>
+        </svg>
+
+        <nav class="menu__nav">
+          <ul class="header__list menu__list">
+            <li class="header__item menu__item list">
+              <a href="" class="header__link menu__link link current">О нас</a>
+            </li>
+            <li class="header__item menu__item list">
+              <a href="" class="header__link menu__link link">Услуги и цены</a>
+            </li>
+            <li class="header__item menu__item list">
+              <a href="" class="header__link menu__link link">Мастера</a>
+            </li>
+            <li class="header__item menu__item list">
+              <a href="" class="header__link menu__link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu__connect">
+          <a class="header__tel menu__tel link" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <button
+            type="button"
+            class="button hero__button menu__button"
+            data-modal-open
+          >
+            онлайн-запись
+          </button>
+          <ul class="soc">
+          <li class="soc-list list">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  lang="en"
+                  class="link soc__link soc__link--inst"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero__item list">
+                <a
+                  href=""
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  lang="en"
+                  class="link soc__link soc__link--yt"
+                  >Youtube</a
+                >
+              </li>
+        </ul>
+        </div>
+        
+        
+            
+    </div>
     <main>
       <!-- HERO -->
       <section class="hero">
@@ -698,5 +773,6 @@
       </div>
     </div>
     <script src="./js/modal..js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
