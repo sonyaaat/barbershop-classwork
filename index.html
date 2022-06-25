@@ -434,43 +434,92 @@
           <p class="pre-header gallery__pre-header">
             На латинском языке “барба” означает “борода”
           </p>
+
           <h2 hidden>Галерея</h2>
           <ul class="gallery__list">
             <li class="gallery__item list">
-              <img
-                src="./images/work1.jpg"
-                alt="Барбер стрежет клиента"
-                width="270"
-                height="360"
-                class="gallery__img"
-              />
+              <picture>
+                <source
+                  srcset="./images/work1-small.jpg"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="./images/work1-medium.jpg"
+                  media="(max-width:1199.98px)"
+                />
+                <source
+                  srcset="./images/work1.jpg"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/work1.jpg"
+                  alt="Барбер стрежет клиента"
+                  class="gallery__img"
+                />
+              </picture>
             </li>
             <li class="gallery__item list">
-              <img
-                src="./images/work2.jpg"
-                alt="Барбер стрежет клиента"
-                width="270"
-                height="360"
-                class="gallery__img"
-              />
+              <picture>
+                <source
+                  srcset="./images/work2-small.jpg"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="./images/work2-medium.jpg"
+                  media="(max-width:1199.98px)"
+                />
+                <source
+                  srcset="./images/work2.jpg"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/work2.jpg"
+                  alt="Барбер стрежет клиента"
+                  class="gallery__img"
+                />
+              </picture>
             </li>
             <li class="gallery__item list">
-              <img
-                src="./images/work3.jpg"
-                alt="Барбер стрежет клиента"
-                width="270"
-                height="360"
-                class="gallery__img"
-              />
+              <picture>
+                <source
+                  srcset="./images/work3-small.jpg"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="./images/work3-medium.jpg"
+                  media="(max-width:1199.98px)"
+                />
+                <source
+                  srcset="./images/work3.jpg"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/work3.jpg"
+                  alt="Барбер стрежет клиента"
+                  class="gallery__img"
+                />
+              </picture>
             </li>
             <li class="gallery__item list">
-              <img
-                src="./images/work4.jpg"
-                alt="Барбер стрежет клиента"
-                width="270"
-                height="360"
-                class="gallery__img"
-              />
+              <picture>
+                <source
+                  srcset="./images/work4-small.jpg"
+                  media="(max-width:767.98px)"
+                />
+                <source
+                  srcset="./images/work4-medium.jpg"
+                  media="(max-width:1199.98px)"
+                />
+                <source
+                  srcset="./images/work4.jpg"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/work4.jpg"
+                  alt="Барбер стрежет клиента"
+                  class="gallery__img"
+                />
+              </picture>
             </li>
           </ul>
         </div>
@@ -484,7 +533,7 @@
               <div class="online__field">
                 <input
                   type="text"
-                  class="online__input"
+                  class="online__input online__input--name"
                   name="online-name"
                   id="online-name"
                   placeholder=" "
@@ -551,10 +600,12 @@
                   </a>
                 </li>
               </ul>
-              <p class="pre-header contacts__pre-header">время работы</p>
-              <p class="paragraph contacts__paragraph">
-                Ежедневно с 9:00 до 22:00
-              </p>
+              <div class="contacts__wrap">
+                <p class="pre-header contacts__pre-header">время работы</p>
+                <p class="paragraph contacts__paragraph">
+                  Ежедневно с 9:00 до 22:00
+                </p>
+              </div>
             </address>
           </section>
         </div>

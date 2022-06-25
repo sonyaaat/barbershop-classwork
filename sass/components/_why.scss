@@ -13,7 +13,7 @@
   display: flex;
 }
 .why__content {
-  width: 500px;
+  max-width: 500px;
   margin-left: 130px;
   @media screen and(max-width:1199.98px) {
     margin-left: 0;
@@ -58,6 +58,10 @@
     width: 170px;
     height: 133px;
   }
+  @media screen and(max-width:480px) {
+    width: 40%;
+    height: 133px;
+  }
 }
 .why__number {
   font-weight: 700;
@@ -96,4 +100,7 @@
 }
 .why__paragraph {
   color: var(--main-paragraph-color-dark);
+  @media screen and(max-width:480px) {
+    font-size: 3vw;
+  }
 }

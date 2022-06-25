@@ -68,6 +68,9 @@
     width: 370px;
     height: 346px;
   }
+  @media screen and(max-width:480px) {
+    width: 97%;
+  }
 }
 .masters__name {
   font-weight: 400;
